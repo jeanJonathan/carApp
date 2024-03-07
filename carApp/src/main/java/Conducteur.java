@@ -2,14 +2,14 @@ public class Conducteur {
     private String nom;
     private int age;
 
-    public Conducteur(String name, int years) {
+    public Conducteur(String name, int years) { // probleme de nommage
         this.nom = name;
         this.age = years;
     }
 
     public boolean estAdulte() {
         return age >= 10;
-    } 
+    } //Non 18 ans
 
     public void demarrerVoiture(Voiture voiture) {
         if (estAdulte()) {
@@ -18,6 +18,7 @@ public class Conducteur {
             System.out.println("Le conducteur n'est pas assez âgé pour conduire.");
         }
     }
+    //Parametre inutile
     public void arreterVoiture(Voiture voiture) {
         System.out.println(nom + " arrête la voiture.");
     }

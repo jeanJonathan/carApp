@@ -13,8 +13,9 @@ public class Voiture {
         return this.vitesse;
     }
 
+    //Cree une methode afficherDetails() affichant les details de la voiture et non dans la meme methode accelerer
     public void accelerer() {
-        if (vitesse + 10 <= 120) {
+        if (vitesse + 10 <= 120) { // Utilisation de la constante magique pour rperesenter la vitesse maximale 120
             vitesse += 10;
             // afficher détails
             System.out.println("Modèle : " + modele);
